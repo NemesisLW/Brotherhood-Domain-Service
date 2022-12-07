@@ -20,6 +20,8 @@ const main = async () => {
   });
   await txn.wait();
 
+  await domainContract.getAllNames();
+
   const domainOwner = await domainContract.getAddress("ezio");
   console.log("Owner of domain:", domainOwner);
 
@@ -63,10 +65,17 @@ const main = async () => {
     hre.ethers.utils.formatEther(ownerBalance)
   );
 
-  let secondtxn = await domainContract.register("ezio", {
+  // let secondtxn = await domainContract.register("ezio", {
+  //   value: hre.ethers.utils.parseEther("0.1"),
+  // });
+  // await secondtxn.wait();
+
+  let thirdtxn = await domainContract.register("amunet", {
     value: hre.ethers.utils.parseEther("0.1"),
   });
-  await secondtxn.wait();
+  await thirdtxn.wait();
+
+  await domainContract.getAllNames();
 };
 
 const runMain = async () => {
