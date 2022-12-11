@@ -3,6 +3,15 @@
   background-color: #0d1116;
   text-align: center;
   color: white;
+    place-content: center flex-start;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: 100vh;
+    overflow: auto;
+    padding: 0px;
+    position: relative;
 }
 
 p {
@@ -285,7 +294,7 @@ input:focus {
   border-radius: 5px;
   margin: 10px 15px;
   font-size: 18px;
-  background-color: #c4b7fa;
+  background-color: #DFD3C3;
   color: black;
   min-width: 150px;
   max-width: fit-content;
@@ -294,15 +303,15 @@ input:focus {
 
 /* Different background-colour for every nth mint-item */
 .mint-item:nth-child(2n) {
-  background-color: lightblue;
+  background-color: #F8EDE3;
 }
 
 .mint-item:nth-child(3n) {
-  background-color: lightpink;
+  background-color: #D0B8A8;
 }
 
 .mint-item:nth-child(5n) {
-  background-color: lightgreen;
+  background-color: #7D6E83;
 }
 
 .link{
