@@ -3,5 +3,7 @@
 This is a ENS-esque project built with hardhat. 
 
 
-# issues
-UI , UX needs improvement.
+# Issues
+1. UI , UX needs improvement.
+2. Seperate Page to display all details related to a registered domain.
+
